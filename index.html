@@ -23,132 +23,84 @@
             flex-direction: column;
             gap: 40px;
         }
-       h3, p {
-  margin: 0;
+        .b {
+            height: auto;
+            width: 270px;
+            border: 2px solid slategrey;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 10px;
+            margin-top: 30px;
+        }
+        .b1, .b2, .b3, .b4, .b5 {
+            background-color: white;
+        }
+        .img1 {
+            max-width: 95%;
+            max-height: 95%;
+            
+        }
+        .bimg{
+            width: 70%;
+            border: 2px solid slategray;
+            border-radius: 15px;
+        }
+        .b:hover .img1 {
+  transform: translate(-1.5rem, -9.5rem) rotate(-10deg);
 }
-
-a {
-  text-decoration: none;
-}
-
-
-
-.b {
-  width: 240px;
-  height: 280px;
-  background-color: aliceblue;
-  border-radius: 1rem;
-  border: 3px solid maroon;
-  padding: 4rem 2rem 0;
-  color: #2c2c2c;
-  overflow-y: hidden;
-  box-shadow: 0 0px 15px rgba(245, 241, 241, 0.3);
-  margin-bottom: 20px;
-}
-
-.b:hover {
-  box-shadow: 0 0px 10px rgba(245, 241, 241, 0.8); 
-}
-
-.img1 {
-  position: absolute;
-  width: 220px;
+.img1{
+  transition: 0.5s;
   filter: drop-shadow(5px 10px 15px rgba(8, 9, 13, 0.8));
 }
 
-.d {
-  transform: translateY(13.2rem);
-  text-align: center;
-}
-
-.n {
-  font-size: 1.5rem;
-  color: #252525; 
-  margin-bottom: 0.5rem;
-}
-
-.h {
-  display: inline-block;
-  font-size: 1.25rem; 
-  font-weight: 500;
-  margin-bottom: 1.25rem;
-}
-
-.deskripsi {
-  font-size: 0.875rem; 
-  text-align: initial;
-  margin-bottom: 1.25rem;
-  opacity: 0;
-}
-
-.btn {
-  display: block;
-  width: max-content;
-  padding: 0.7rem 2rem;
-  background-color: #252525;
-  color: maroon; 
-  border-radius: 0.5rem;
-  font-weight: 600;
-  transition: 0.2s;
-  opacity: 0;
-  box-shadow: 0 18px 40px -12px rgba(41, 41, 40, 0.4);
-}
-
-.btn:hover {
-  box-shadow: 0 18px 40px -12px rgba(41, 41, 40, 0.9);
-}
-
-.img1,
-.d,
-.n,
-.h,
-.deskripsi {
-  transition: 0.5s;
-}
-
 .b:hover .img1 {
-  transform: translate(-1.5rem, -9.5rem) rotate(-20deg);
+  transform: translate(-1.5rem, -3.5rem) rotate(-20deg);
 }
-
-.b:hover .d {
-  transform: translateY(4.8rem);
-}
-
-.b:hover .n {
-  transform: translateX(-2.3rem);
-  margin-bottom: 0;
-}
-
-.b:hover .h {
-  transform: translateX(-6.8rem);
-}
-
-.b:hover .deskripsi,
-.b:hover .btn {
-  transition-delay: 0.2s;
-  opacity: 1;
-}
+        .n {
+            margin-top: 10px;
+            text-align: center;
+            margin: 20px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 5px;
+            background-color: darkgrey;
+            color: black;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            width: 100px;
+            border: 2px solid slategrey;
+            border-radius: 10px;
+        }
+        button:hover {
+            color: lightblue;
+        }
+        .b:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3);
+        }
         .f {
-            margin-top: 15px;
+            margin-top: 10px;
             display: flexbox;
             justify-content: center;
             gap: 10px;
             text-align: center;
-            margin-top: 20px;
+            margin-top: 40px;
         }
         .bicon {
             margin-right: 5px;
-            height: 35px;
-            width: 35px;
+            height: 40px;
+            width: 40px;
             border: 2px solid black;
             border-radius: 50%;
             background-color: white;
-            margin-top: 10px;
         }
         .icon {
-            margin-top:3px;
-            width: 80%;
-            height: 80%;
+            width: 100%;
+            height: 100%;
         }
         .x {
             width: 100%;
@@ -304,43 +256,31 @@ a {
     <a href="faq.html"><h4>FAQ</h4></a>
 </div>
         <div class="b b1" id="v1">
-            <img src="https://i.imgur.com/SLaztj3.png" class="img1">
-            <div class="d">
+           <div class="bimg"> <img src="https://i.imgur.com/SLaztj3.png" class="img1"></div>
             <h3 class="n">SANDWICH ANGGUR</h3>
-            <span class="h">Rp 8.000</span>
-            <p class="deskripsi">sandwich berisi anggur segar dan krim</p>
-            <a href="https://wa.me/6285691801623?text=saya%20beli%20sandwich%20sando%20varian%20mix" class="btn">BUY</a>
-            </div>
+            <p>Rp 8.000</p>
+            <a href="https://wa.me/6285691801623?text=saya%20beli%20sandwich%20sando%20varian%20anggur"><button>BUY</button></a>
         </div>
         
         <div class="b b2" id="v2">
-            <img src="https://i.imgur.com/87cpA3V.png" class="img1">
-            <div class="d">
+          <div class="bimg">  <img src="https://i.imgur.com/87cpA3V.png" class="img1"></div>
             <h3 class="n">SANDWICH STRAWBERRY</h3>
-            <span class="h">Rp 8.000</span>
-            <p class="deskripsi">sandwich dengan isian strawberry segar dan krim</p>
-            <a href="https://wa.me/6285691801623?text=saya%20beli%20sandwich%20sando%20varian%20mix" class="btn">BUY</a>
-            </div>
+            <p>Rp 8.000</p>
+            <a href="https://wa.me/6285691801623?text=saya%20beli%20sandwich%20sando%20varian%20strawberry"><button>BUY</button></a>
         </div>
         
         <div class="b b3" id="v3">
-            <img src="https://i.imgur.com/WkQDORL.png" class="img1">
-            <div class="d">
+           <div class="bimg"> <img src="https://i.imgur.com/WkQDORL.png" class="img1"></div>
             <h3 class="n">SANDWICH PISANG</h3>
-            <span class="h">Rp 8.000</span>
-            <p class="deskripsi">sandwich dengan isian pisang segar dan krim</p>
-            <a href="https://wa.me/6285691801623?text=saya%20beli%20sandwich%20sando%20varian%20mix" class="btn">BUY</a>
-            </div>
+            <p>Rp 8.000</p>
+            <a href="https://wa.me/6285691801623?text=saya%20beli%20sandwich%20sando%20varian%20pisang"><button>BUY</button></a>
         </div>
         
         <div class="b b4" id="v4">
-            <img src="https://i.imgur.com/0KL6xze.png" class="img1">
-            <div class="d">
+           <div class="bimg"> <img src="https://i.imgur.com/0KL6xze.png" class="img1"></div>
             <h3 class="n">MIX SANDWICH</h3>
-            <span class="h">Rp 8.000</span>
-            <p class="deskripsi">sandwich berisi campuran buah anggur, stroberi, dan pisang, dilengkapi krim</p>
-            <a href="https://wa.me/6285691801623?text=saya%20beli%20sandwich%20sando%20varian%20mix" class="btn">BUY</a>
-            </div>
+            <p>Rp 8.000</p>
+            <a href="https://wa.me/6285691801623?text=saya%20beli%20sandwich%20sando%20varian%20mix"><button>BUY</button></a>
         </div>
     </div>
     <div class="f" id="contact">    
@@ -366,4 +306,4 @@ arrow_warm_up
 </div>
         </div>
 </body>
-                                      </html>
+</html>
